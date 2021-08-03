@@ -9,7 +9,6 @@ This exercise demonstrates
 - Docker installed   (can be downloaded from [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/))
 - Docker compose installed [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
-```
 
 ## Run the example
 ```
