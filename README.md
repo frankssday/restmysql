@@ -3,10 +3,10 @@
 ## Instructions
 This exercise demonstrates
 - The use of Docker compose to build microservices
-- The use of a REST API through a programming language (Javascrip)
+- The use of REST API (GET/POST) through a programming language (Javascrip)
 
 ## Prerequisites
-- Docker installed   (can be downloaded from [https://www.terraform.io/downloads.html](https://www.terraform.io/downloads.html))
+- Docker installed   (can be downloaded from [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/))
 - Docker compose installed [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 
 ```
