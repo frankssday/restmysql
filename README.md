@@ -7,7 +7,7 @@ This exercise demonstrates
 
 ## Prerequisites
 - Docker installed   (can be downloaded from [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/))
-- Docker compose installed [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
+- Docker compose installed [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
 ```
 
@@ -25,4 +25,11 @@ Launch a terminal/command prompt and copy and paste the following POST curl requ
 ```
 $ curl -X POST -H "Content-Type: application/json" -d '{"title":"Albert Einstein"}' http://localhost:4000/docs
 ```
-Refresh the browser
+Refresh the browser to the effect of POST request
+
+## Cleanup
+```
+$ docker-compose down
+$ docker volume rm restmysql_mysql
+$ docker volume rm restmysql_mysql_config
+```
