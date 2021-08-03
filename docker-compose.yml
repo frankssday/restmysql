@@ -1,0 +1,35 @@
+version: '3.8'
+services: 
+    web:
+        build:
+            context: .
+        env_file: ./.env
+        command: npm start
+        volumes: 
+            - .:/app/
+            - /app/node_modules
+        ports:
+            - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
+        depends_on: 
+            - mysqldb
+        environment: 
+            MYSQL_HOST: mysqldb
+    mysqldb:
+        image: mysql:5.7
+        env_file: ./.env
+        #command: --default-authentication-plugin=mysql_native_password
+        environment: 
+            MYSQL_ROOT_PASSWORD: example
+            MYSQL_USER: rhino
+            MYSQL_PASSWORD: rhino123
+            MYSQL_DATABASE: bookstore
+        ports:
+            - $MYSQL_LOCAL_PORT:$MYSQL_DOCKER_PORT
+        volumes:
+            - mysql:/var/lib/mysql
+            - mysql_config:/etc/mysql
+            - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
+
+volumes:
+    mysql:
+    mysql_config:
