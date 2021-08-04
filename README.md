@@ -20,12 +20,12 @@ $ docker-compose up -d
 Launch a brower and copy paste the URL http://localhost:4000 to visit the home page
 Click "click to see the books"
 
-Launch a terminal/command prompt and copy and paste the following POST curl request
+Launch a terminal/command prompt. Then copy/paste and execute the following two POST requests one by one. 
 ```
 $ curl -X POST -H "Content-Type: application/json" -d '{"title":"Albert Einstein"}' http://localhost:4000/docs
 $ curl -X POST -H "Content-Type: application/json" -d '{"title":"George Washington"}' http://localhost:4000/docs
 ```
-Refresh the browser to the effect of POST request
+Refresh the browser (the URL should be http://localhost:4000/docs) to the effect of POST requests
 
 ## Cleanup
 ```
