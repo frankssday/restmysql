@@ -1,1 +1,2 @@
 curl -X POST -H "Content-Type: application/json" -d '{"title":"Albert Einstein"}' http://localhost:4000/docs
+curl -X POST -H "Content-Type: application/json" -d '{"title":"George Washington"}' http://localhost:4000/docs
