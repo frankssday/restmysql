@@ -22,7 +22,6 @@ res.send('<b>This is a sample test from Rhinogram implemented with Node.JS Expre
 app.get('/docs', (req,res)=> {
    con.query("SELECT * FROM books", function (err, result, fields) {
      if (err) throw err;
-     //con.end();
      console.log(JSON.stringify(result));
      res.status(200).send(JSON.stringify(result));
    })
@@ -30,8 +29,7 @@ app.get('/docs', (req,res)=> {
 
 //POST request
 app.post('/docs', (req,res) => {
-    //var sql = "INSERT INTO books (title) VALUES (" + req.body.title + ")";
-    var sql = "INSERT INTO books (title) VALUES ('Albert Einstein')";
+    var sql = "INSERT INTO books (title) VALUES ('" + req.body.title + "')";
     //console.log(req.body.title);
     console.log(sql);
     con.query(sql, function (err, result, fields) {
