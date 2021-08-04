@@ -23,6 +23,7 @@ Click "click to see the books"
 Launch a terminal/command prompt and copy and paste the following POST curl request
 ```
 $ curl -X POST -H "Content-Type: application/json" -d '{"title":"Albert Einstein"}' http://localhost:4000/docs
+$ curl -X POST -H "Content-Type: application/json" -d '{"title":"George Washington"}' http://localhost:4000/docs
 ```
 Refresh the browser to the effect of POST request
 
