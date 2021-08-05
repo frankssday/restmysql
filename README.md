@@ -3,7 +3,7 @@
 ## Instructions
 This exercise demonstrates
 - The use of Docker compose to build microservices
-- The use of REST API (GET/POST) through a programming language (Javascrip)
+- The use of REST API (GET/POST) through a programming language (Javascript/Node.js)
 
 ## Prerequisites
 - Docker installed   (can be downloaded from [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/))
