@@ -18,7 +18,7 @@ $ docker-compose up -d
 ```
 
 Launch a brower and copy paste the URL http://localhost:4000 to visit the home page
-Click "click to see the books"
+Then click "click to see the books"
 
 Launch a terminal/command prompt. Then copy/paste and execute the following two POST requests one by one. 
 ```
