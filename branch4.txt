@@ -1,0 +1,1 @@
+This is branch4.txt added using vi in the cloned branch.
